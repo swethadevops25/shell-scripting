@@ -1,8 +1,9 @@
 !#/bin/blash
 
 sample{} {
+  a=30  
   echo hello world from function
-  echo a = $a
+  echo a in function = $a
   b=20
 }
 
@@ -12,6 +13,7 @@ sample{} {
 # Main program
 a=10
 sample
-echo b=$b
+echo a in main program = $a
+echo b in main program =$b
 
 
