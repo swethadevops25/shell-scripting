@@ -10,3 +10,5 @@ echo all arguments =$@
 
 echo number of arguments = $#
 
+echo number of arguments = $#
+
