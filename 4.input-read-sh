@@ -1,4 +1,6 @@
 #!/bin/bash
+read -p 'enter your name:'name
+
 
 name=swetha
 echo "your name = $name"
