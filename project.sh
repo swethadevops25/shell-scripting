@@ -43,6 +43,13 @@ payment () {
     echo "Installing payment service"
 }
 
+usage() {
+    echo "usage: $0 component"
+    echo "components: frontend mangodb mysql rabbitmq redis cart catalogue user shipping payment"
+    echo "for all components: all"
+    exit 1
+}
+
 case $1 in 
      frontend)
         frontend
@@ -86,4 +93,9 @@ case $1 in
         shipping 
         payment 
         ;;
+    *}  
+         usage
+         ;;
+    
+
  esac       
