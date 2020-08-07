@@ -5,8 +5,6 @@
 
 frontend() {
    echo "Installing frontend service" 
-
-
 }
 
 mongodb() {
