@@ -93,7 +93,7 @@ case $1 in
         shipping 
         payment 
         ;;
-    *}  
+*) 
          usage
          ;;
     
