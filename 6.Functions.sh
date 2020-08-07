@@ -1,4 +1,4 @@
-!#/bin/blash
+#!/bin/blash
 
 sample{} {
   a=30  
