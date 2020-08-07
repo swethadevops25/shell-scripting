@@ -44,9 +44,9 @@ payment () {
 }
 
 usage() {
-    echo -e "usage: \t\t\t $0  component"
-    echo -e "components: \t\t frontend mangodb mysql rabbitmq redis cart catalogue user shipping payment"
-    echo -e "for all components: \t all"
+    echo -e "usage: \t\t\t \e{33m$0  component\e{0m"
+    echo -e "components: \t\t \e{33mfrontend mangodb mysql rabbitmq redis cart catalogue user shipping payment\e{0m"
+    echo -e "for all components: \t \e{33mall\e{0m"
     exit 1
 }
 
