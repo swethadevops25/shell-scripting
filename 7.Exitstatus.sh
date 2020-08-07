@@ -1,6 +1,6 @@
 #!/bin/bash
 
-exit 10
+#exit 10
 
 sample() {
     return 20
