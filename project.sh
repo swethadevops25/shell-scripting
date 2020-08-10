@@ -1,11 +1,13 @@
 #!/bin/bash
 
+LOG_FILE*/tmp/roboshop.log
+rm -f $LOG_FILE
 
 
 
 frontend() {
    echo "Installing frontend service" 
-   yum install nginx -y
+   yum install nginx -y &>$LOG_FILE
    case $? in
    0) echo "nginx install - success"
        ;;
