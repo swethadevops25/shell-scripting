@@ -1,17 +1,6 @@
 #!/bin/bash
 
-LOG_FILE*/tmp/roboshop.log
-rm -f $LOG_FILE
- 
-## check root user or not
-ID_USER-$(id -u)
-case $ID_USER in
- 0) true;;
- *)
-    echo "script should be run as root user, or sudo"
-    usage
-    ;;
-  esac  
+
 
 
 frontend() {
@@ -25,6 +14,21 @@ frontend() {
     exit 1   
     esac   
 }
+
+## main program
+
+LOG_FILE*/tmp/roboshop.log
+rm -f $LOG_FILE
+ 
+## check root user or not
+ID_USER-$(id -u)
+case $ID_USER in
+ 0) true;;
+ *)
+    echo "script should be run as root user, or sudo"
+    usage
+    ;;
+  esac  
 
 mongodb() {
     echo "Installing mongodb service"
